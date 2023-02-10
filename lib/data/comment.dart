@@ -4,11 +4,13 @@ class Comment {
 
   String? avatar;
   String? userName;
+  String? description;
   String? content;
 
   Comment({
     required this.avatar,
     required this.userName,
     required this.content,
+    this.description,
   });
 }
