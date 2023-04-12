@@ -6,11 +6,13 @@ class Comment {
   String? userName;
   String? description;
   String? content;
+  int? id;
 
   Comment({
     required this.avatar,
     required this.userName,
     required this.content,
     this.description,
+    this.id,
   });
 }
