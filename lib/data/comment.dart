@@ -7,6 +7,7 @@ class Comment {
   String? description;
   String? content;
   int? id;
+  bool? isCommentLiked;
 
   Comment({
     required this.avatar,
@@ -14,5 +15,6 @@ class Comment {
     required this.content,
     this.description,
     this.id,
+    this.isCommentLiked,
   });
 }
