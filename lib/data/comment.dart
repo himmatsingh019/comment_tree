@@ -6,8 +6,13 @@ class Comment {
   String? userName;
   String? description;
   String? content;
-  int? id;
   bool? isCommentLiked;
+
+  /// This is comment's id
+  int? id;
+
+  /// This is user id of the commenter
+  int? userId;
 
   Comment({
     required this.avatar,
@@ -16,5 +21,6 @@ class Comment {
     this.description,
     this.id,
     this.isCommentLiked,
+    this.userId,
   });
 }
