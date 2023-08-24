@@ -8,6 +8,10 @@ class Comment {
   String? content;
   bool? isCommentLiked;
 
+  //Variables for like and comment count
+  int? likeCount;
+  int? commentCount;
+
   /// This is comment's id
   int? id;
 
@@ -22,5 +26,7 @@ class Comment {
     this.id,
     this.isCommentLiked,
     this.userId,
+    this.commentCount,
+    this.likeCount,
   });
 }
