@@ -1,3 +1,5 @@
+import 'package:comment_tree/data/media_model.dart';
+
 class Comment {
   // ignore: constant_identifier_names
   static const TAG = 'Comment';
@@ -18,6 +20,9 @@ class Comment {
   /// This is user id of the commenter
   int? userId;
 
+  ///Comment Media Varibales
+  final CommentMediaModel? media;
+
   Comment({
     required this.avatar,
     required this.userName,
@@ -28,5 +33,6 @@ class Comment {
     this.userId,
     this.commentCount,
     this.likeCount,
+    this.media,
   });
 }
